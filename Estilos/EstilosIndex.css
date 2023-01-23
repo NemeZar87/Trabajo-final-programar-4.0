@@ -1,0 +1,461 @@
+/*
+tuve complicaciones con:
+-los display
+
+-el orden no se si es el adecuado
+
+*/
+html{
+    scroll-behavior: smooth;
+}
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/Imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.contenedor{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+.cont-prin{
+    padding: 50px;
+}
+.cont-sec2{
+    border: 5px solid rgb(255, 85, 0);
+}
+
+.fila{
+    display:inline-block;
+    width: 100%;
+}
+
+
+[class*="col-"]{
+    padding: 1px;
+    float: left;
+}
+
+#btn-menu-cel{
+    display: block;
+    width: 40px;
+}
+
+#tit-cel{
+    font-family: 'Sonsie One', cursive;
+    margin: 7px 0px 0px 10px;
+    font-size: 19px;
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    list-style: none;
+}
+
+nav ul li a{
+    font-size: 16pt;
+    border: 1px solid black;
+	border-radius: 10px 10px 10px 10px;
+	display: block;
+	background-color: rgba(255, 85, 0);
+	color:white;
+	line-height: 25px;
+}
+
+nav ul li a:hover{
+    background-color: rgba(100,0,255,.4);
+}
+
+nav ul li a:active{
+    background-color: rgba(255,0,100,1);
+}
+#tema{
+    display: none;
+    background-color: rgb(255, 125, 0);
+    border-radius: 0px 30px 30px 0px;
+    
+}
+#color-tema{
+    text-align: left;
+}
+#sin-fondo{
+    text-align: left;
+}
+
+h3{
+    color: white;
+    margin: 5px 0px 0px 0px;
+}
+#defaul{
+    border-radius: 10px;
+    height: 30px;
+    width: 110px;
+    margin: 10px 5px;
+}
+#purpura{
+    background-color: #6c4675;
+    border-radius: 10px;
+    height: 30px;
+    width: 70px;
+    margin: 10px 5px;
+    color: white;
+}
+#marron{
+    background-color: #4e3b31;
+    height: 30px;
+    border-radius: 10px;
+    width: 70px;
+    margin: 10px 5px;
+}
+#sf{
+    border-radius: 10px;
+    height: 30px;
+    width: 110px;
+    margin: 10px 5px;
+}
+#verde{
+    background-color: #20603d;
+    border-radius: 10px;
+    color: white;
+    height: 30px;
+    width: 70px;
+    margin: 10px 5px;
+}
+#usu{
+
+    margin: 30px 0px 15px 0px;
+    width: 130px;
+}
+
+main{
+    font-family: 'Gentium Book Plus', serif;
+
+}
+
+main h2, #fondo_letra{
+    margin-bottom: 0px;
+    background-color: black;
+    border-radius: 10px 10px 0px 0px;
+    font-family: 'Bungee Spice', cursive;
+    font-size: 15px;
+}
+
+main ul{
+    margin-top: 0px;
+    padding: 0px 10px;
+    list-style-position: inside;
+    /*list-style-type: square;*/
+}
+
+#titulo1, #titulo2, #titulo3{
+    display: none;
+    
+}
+
+div #titulo, #foto-perfil{
+    text-align: center;
+    margin: auto;
+}
+
+section p{
+    text-align: justify;
+}
+
+p#obj{
+    text-indent: 40px;
+    margin: 0px 10px;
+}
+table{
+    border-collapse: collapse; 
+    width: 100%;
+}
+
+#btn-fac1, #btn-fac2, #btn-fac3{
+    border-radius: 10px;
+}
+table tr p{
+    text-align: center;
+    
+}
+.etiquetas{
+    font-size: 15px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(255, 85, 0);    
+}
+
+.sombreado{
+    background: rgba(236, 234, 233, 0.738);
+}
+footer{  
+    line-height: 50px;
+}
+
+#pie{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+span{
+    text-align: center;
+    background-color: black;
+
+}
+
+@media(max-width: 507px){
+    .cont-prin{
+        padding: 0px;
+    }
+    #menu-pc{
+        display: none;
+    }
+    header{
+        background-color: none;
+    }
+    #tit-pc{
+        display: none;
+    }
+    main{
+        font-size: 18px;
+    }
+    .col-xs-0{display: none;}
+    .col-xs-1{width: 8.33333333%;}
+    .col-xs-2{width: 16.66666667%;}
+    .col-xs-3{width: 25%;}
+    .col-xs-4{width: 33.33333333%;}
+    .col-xs-5{width: 41.66666667%;}
+    .col-xs-6{width: 50%;}
+    .col-xs-7{width: 58.33333333%;}
+    .col-xs-8{width: 66.66666667%;}
+    .col-xs-9{width: 75%;}
+    .col-xs-10{width: 83.33333333%;}
+    .col-xs-11{width: 91.66666667%;}
+    .col-xs-12{width: 100%;}
+}
+
+@media(min-width: 507px) and (max-width: 1023px){
+    #menu-cel{
+        display: none;
+    }
+    header{    
+        background-color: black;
+    }
+    main{
+        font-size: 18px;
+    }
+    .col-ms-0{display: none;}
+    .col-ms-1{width: 8.33333333%;}
+    .col-ms-2{width: 16.66666667%;}
+    .col-ms-3{width: 25%;}
+    .col-ms-4{width: 33.33333333%;}
+    .col-ms-5{width: 41.66666667%;}
+    .col-ms-6{width: 50%;}
+    .col-ms-7{width: 58.33333333%;}
+    .col-ms-8{width: 66.66666667%;}
+    .col-ms-9{width: 75%;}
+    .col-ms-10{width: 83.33333333%;}
+    .col-ms-11{width: 91.66666667%;}
+    .col-ms-12{width: 100%;}
+}
+
+
+@media(min-width: 1024px) and (max-width: 1439px){
+    #menu-cel{
+        display: none;
+    }
+    header{
+        background-color: black;
+    }
+    main{
+        font-size: 20px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    #tit-pc, #tit-nomb{
+        font-size: 30px;
+    }
+    .cont-prin{
+        padding: 50px 100px 0px 100px;
+    }
+
+    main h2{
+        font-size: 25px;
+    }
+    .etiquetas{
+        font-size:  20px;
+    }
+    #btn-fac1, #btn-fac2, #btn-fac3{
+        font-size: 100%;
+        width: 100px;
+        height: auto;
+    }
+    #pie{
+        font-size: 20px;
+    }
+    .col-md-0{display: none;}
+    .col-md-1{width: 8.33333333%;}
+    .col-md-2{width: 16.66666667%;}
+    .col-md-3{width: 25%;}
+    .col-md-4{width: 33.33333333%;}
+    .col-md-5{width: 41.66666667%;}
+    .col-md-6{width: 50%;}
+    .col-md-7{width: 58.33333333%;}
+    .col-md-8{width: 66.66666667%;}
+    .col-md-9{width: 75%;}
+    .col-md-10{width: 83.33333333%;}
+    .col-md-11{width: 91.66666667%;}
+    .col-md-12{width: 100%;}
+}
+
+@media(min-width: 1440px)and (max-width: 2559px){
+    #menu-cel{
+        display: none;
+    }
+    header{
+        background-color: black;
+    }
+    
+    main{
+        font-size: 20px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        line-height: 100%;
+
+    }
+    #defaul, #purpura, #marron, #verde, #sf{
+        font-size: 60%;
+        height: 40px;
+
+        width: 120px;
+        margin: 10px 5px;
+    }
+    nav h3{
+        font-size: 120%;
+    }
+    #usu{
+        width: 30%;
+    }
+    #tit-pc, #tit-nomb{
+        font-size: 40px;
+    }
+    .cont-prin{
+        padding: 50px 100px 0px 100px;
+    }
+    main h2{
+        font-size: 20px;
+    }
+    .etiquetas{
+        font-size: 20px;
+    }
+    #btn-fac1, #btn-fac2, #btn-fac3{
+        font-size: 100%;
+        width: 150px;
+        height: auto;
+    }
+    #pie{
+        font-size: 200%;
+        line-height: 300%;
+    }
+    .col-lg-0{display: none;}
+    .col-lg-1{width: 8.33333333%;}
+    .col-lg-2{width: 16.66666667%;}
+    .col-lg-3{width: 25%;}
+    .col-lg-4{width: 33.33333333%;}
+    .col-lg-5{width: 41.66666667%;}
+    .col-lg-6{width: 50%;}
+    .col-lg-7{width: 58.33333333%;}
+    .col-lg-8{width: 66.66666667%;}
+    .col-lg-9{width: 75%;}
+    .col-lg-10{width: 83.33333333%;}
+    .col-lg-11{width: 91.66666667%;}
+    .col-lg-12{width: 100%;}	
+}
+@media(min-width: 2560px){
+    #menu-cel{
+        display: none;
+    }
+    header{
+        background-color: black;
+    }
+    
+    main{
+        font-size: 300%;
+    }
+    nav ul li a{
+        font-size: 70px;
+        border-radius: 40px;
+        line-height: 150%;
+    }
+    #defaul, #purpura, #marron, #verde, #sf{
+        font-size: 100%;
+        height: 100px;
+        border-radius: 40px;
+        width: 500px;
+        margin: 10px 5px;
+    }
+    /**/
+    nav h3{
+        font-size: 400%;
+    }
+    #usu{
+        width: 50%;
+    }
+    #btn-fac1, #btn-fac2, #btn-fac3{
+        font-size: 130%;
+        width: 300px;
+        height: auto;
+    }
+    #pie{
+        font-size: 300%;
+        line-height: 300%;
+    }
+
+    #tit-pc, #tit-nomb{
+        font-size: 90px;
+        place-content: center;
+    }
+
+    main h2{
+        font-size: 60px;
+    }
+    .etiquetas{
+        font-size: 50px;
+    }
+    .col-4k-0{display: none;}
+    .col-4k-1{width: 8.33333333%;}
+    .col-4k-2{width: 16.66666667%;}
+    .col-4k-3{width: 25%;}
+    .col-4k-4{width: 33.33333333%;}
+    .col-4k-5{width: 41.66666667%;}
+    .col-4k-6{width: 50%;}
+    .col-4k-7{width: 58.33333333%;}
+    .col-4k-8{width: 66.66666667%;}
+    .col-4k-9{width: 75%;}
+    .col-4k-10{width: 83.33333333%;}
+    .col-4k-11{width: 91.66666667%;}
+    .col-4k-12{width: 100%;}
+}
+
+
+
+
+#color-tema, #sin-fondo{
+    text-align: center;
+}
